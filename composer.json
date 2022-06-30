@@ -1,0 +1,46 @@
+{
+    "name": "redot/router",
+    "description": "PHP Routing System",
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/redot-src/php-router/issues",
+        "source": "https://github.com/redot-src/php-router"
+    },
+    "authors": [
+        {
+            "name": "Abdelrhman Said",
+            "email": "abdelrhmansaidzaki@hotmail.com",
+            "role": "Developer"
+        }
+    ],
+    "keywords": [
+        "php",
+        "router",
+        "php-router"
+    ],
+    "autoload": {
+        "psr-4": {
+            "Redot\\Router\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.0"
+    },
+    "require-dev": {
+        "pestphp/pest": "^1.21"
+    },
+    "config": {
+        "lock": false,
+        "sort-packages": true,
+        "optimize-autoloader": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "scripts": {
+        "test": "./vendor/bin/pest"
+    },
+    "scripts-description": {
+        "test": "Runs the tests"
+    }
+}
